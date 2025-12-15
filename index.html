@@ -1,0 +1,1272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synaptigen Review 2025: Does it Fix Memory Loss? | Official Website</title>
+    <meta name="description" content="A premium, modern landing page template for Synaptigen.">
+    
+   <link rel="icon" type="image/png" href="https://getsynaptigen.com/statics/img/favicon.png">
+
+    <style>
+	
+        /* UPDATED COLOR THEME: Light Grey (Primary), Soft Green (Highlight), Dark Green (CTA) */
+:root {
+    --primary-color: #546E7A; /* Dark Grey - Main Headings/Accents/Footer */
+    --secondary-color: #8BC34A; /* Soft Light Green - Highlight/Feature */
+    --dark-green: #388E3C; /* Darker Green - CTA Button */
+    --light-bg: #ECEFF1; /* Very Light Grey Background */
+    --text-dark: #333333;
+    --white: #FFFFFF;
+    --star-color: #FFC107; 
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-bg);
+    color: var(--text-dark);
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+/* Header/Navigation Bar (Clean Look with Flexbox) */
+.navbar {
+    background-color: var(--white);
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.navbar .container {
+    display: flex; /* Enable Flexbox for horizontal alignment */
+    justify-content: space-around; /* Space out Logo, Links, and Button */
+    align-items: center; 
+    max-width: 1100px;
+    padding: 0 20px;
+    margin: auto;
+}
+
+.navbar-logo h3 {
+    color: #000000; /* Use black for contrast */
+    font-size: 2.2em;
+    margin: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.navbar-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Links ko row mein rakhne ke liye */
+    gap: 30px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 700;
+    font-size: 1.15em;
+    transition: color 0.2s;
+}
+
+.navbar-links a:hover {
+    color: var(--dark-green);
+}
+
+/* Navbar specific CTA Button (Smaller than main page buttons) */
+.navbar-cta a {
+    text-decoration: none;
+    background-color: var(--dark-green);
+    color: var(--white);
+    padding: 20px 34px;
+    border-radius: 30px;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition: background-color 0.2s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-cta a:hover {
+    background-color: #2E7D32;
+}
+
+/* Hero Section (Side-by-Side Layout) */
+.hero {
+    background: linear-gradient(135deg, var(--white) 0%, var(--light-bg) 100%);
+    padding: 30px 0;
+}
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.hero-text {
+    flex: 1;
+    min-width: 300px;
+}
+/* CSS FIX FOR BOTTLE IMAGE SIZE */
+.hero-image {
+    flex: 1;
+    text-align: center;
+    min-width: 300px;
+}
+.hero-image img {
+    max-width: 100%; /* Image ko 85% tak shrink kiya */
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero Text Styles (Updated size and margin) */
+.hero h1 {
+    font-size: 2.2em; /* Reduced Font Size */
+    color: #000000; 
+    margin-bottom: 5px; /* Reduced Margin */
+    line-height: 1.2;
+}
+.hero p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px; /* Space below paragraph */
+}
+
+/* CTA Button Styling (Dark Green) */
+.cta-button {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: var(--dark-green); /* Dark Green */
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(56, 142, 60, 0.4);
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.cta-button:hover {
+    background-color: #2E7D32;
+    transform: translateY(-2px);
+}
+
+/* Section Styling */
+.section {
+    padding: 10px 0;
+}
+.section:nth-child(even) { 
+    background-color: var(--white);
+}
+
+.section h2 {
+    text-align: center;
+    color: #000000;;
+    font-size: 3.2em;
+    margin-bottom: 40px;
+}
+
+/* Feature Grid */
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+.feature-item {
+    background-color: var(--white);
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-top: 4px solid var(--secondary-color); /* Soft Green Accent */
+}
+.feature-item h3 {
+    color: var(--dark-green);
+}
+.feature-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Review Flexbox Styling */
+.review-flex {
+    display: flex; 
+    gap: 15px; 
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    background-color: var(--white);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+.review-flex img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+.review-text-content {
+    flex-grow: 1;
+}
+.review-text-content p {
+    margin-top: 5px;
+    font-size: 0.95em;
+    font-style: italic;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--primary-color);
+    color: var(--light-bg);
+    padding: 30px 0;
+    font-size: 0.9em;
+    text-align: center;
+}
+.footer a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .navbar-links {
+        margin: 10px 0;
+        gap: 15px; 
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .navbar-cta {
+        margin-top: 5px;
+    }
+    .hero-content {
+        flex-direction: column;
+    }
+    .hero-text, .hero-image {
+        min-width: 100%;
+    }
+    .hero-image { order: -1; }
+    .pricing-table { flex-direction: column; align-items: center; }
+    .price-box { width: 90%; }
+}
+/* Full width section for CTA */
+.full-width-cta {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+    <div class="container">
+        
+        <div class="navbar-logo">
+            <h3>Synaptigen</h3>
+        </div>
+        
+        <ul class="navbar-links">
+            <li><a href="#ingredients-section">Ingredients</a></li>
+            <li><a href="#bonuses-section">FREE Bonuses</a></li>
+            <li><a href="#faq-section">FAQ</a></li>
+        </ul>
+        
+        <div class="navbar-cta">
+            <a href="https://b07276p1ssoa86xd1jhe69kzo4.hop.clickbank.net">ORDER NOW</a>
+        </div>
+        
+    </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>A Breakthrough Natural Solution That Supports A Healthy Memory Well Into Old Age</h1>
+                
+                <p>Synaptigen delivers the clean focus and sustained memory boost you need to dominate your goals without the jitters or the afternoon crash.</p>
+
+                <!-- PRICE CODE ADDED HERE -->
+                <h2 style="font-size: 1.2em; color: #CC0000; text-decoration: line-through; margin-bottom: 5px; font-weight: 500;">Regular Price: $99/bottle</h2>
+                <p style="font-size: 1.6em; color: var(--dark-green); font-weight: 700; margin-top: 0;">Today Only: $49/bottle</p>
+                <!-- END PRICE CODE -->
+                
+                <div style="text-align: center; margin-bottom: 0px;">
+                    <img src="https://getsynaptigen.com//statics/img/certifications.png?" 
+                        alt="Secure Payment Logos" 
+                        style="max-width: 480px; height: auto; display: inline-block;">
+                </div>
+
+                <!-- HERO CTA BUTTON ADDED HERE -->
+                <div style="text-align: center; margin-top: 30px; margin-bottom: 20px;">
+                    <a href="https://b07276p1ssoa86xd1jhe69kzo4.hop.clickbank.net" class="cta-button" ... >
+                        GET 50% OFF & ORDER NOW
+                    </a>
+                </div>
+                <!-- END HERO CTA BUTTON -->
+            </div>
+            <div class="hero-image">
+                <img src="https://getsynaptigen.com//statics/img/tsl-prod.png?" 
+                    alt="Synaptigen Product Bottle">
+            </div>
+        </div>
+    </header>
+    
+    <!-- 🟢 NAYA SECTION YAHAN ADD HUA HAI: Why Choose Synaptigen? -->
+	<section class="section full-width-cta" id="global-cta-bar" style="
+   
+    </div>
+</section>
+    <section class="section" id="why-choose">
+        <div class="container">
+            <!-- Heading is centered as requested -->
+            <h2 style="text-align: center;">Why Choose Synaptigen?</h2>
+            
+            <div class="feature-grid">
+                
+                <!-- Feature 1: Made In The USA -->
+                <div class="feature-item">
+                    <img src="https://synapptigen.com/assets/images/madeinusa-500x300.webp" 
+                         alt="Made In The USA flag icon">
+                    <h3 style="color: var(--primary-color);">Made In The USA</h3>
+                    <p style="color: #666;">Our Synaptigen is proudly formulated and manufactured in the United States of America under strict quality standards.</p>
+                </div>
+                
+                <!-- Feature 2: FDA Approved -->
+                <div class="feature-item">
+                    <img src="https://synapptigen.com/assets/images/fda-approved-500x300.webp" 
+                         alt="FDA Approved facility badge">
+                    <h3 style="color: var(--primary-color);">FDA Approved</h3>
+                    <p style="color: #666;">Our facility is registered with the FDA, ensuring all processes meet the highest legal and quality requirements.</p>
+                </div>
+                
+                <!-- Feature 3: GMP Certified -->
+                <div class="feature-item">
+                    <img src="https://synapptigen.com/assets/images/gmp-certified-500x300.webp" 
+                         alt="GMP Certified seal">
+                    <h3 style="color: var(--primary-color);">GMP Certified</h3>
+                    <p style="color: #666;">We adhere to Good Manufacturing Practice (GMP) standards for quality assurance and consistency in every bottle.</p>
+                </div>
+                
+                <!-- Feature 4: 100% Natural -->
+                <div class="feature-item">
+                    <img src="https://synapptigen.com/assets/images/100-natural-500x300.webp" 
+                         alt="100% Natural ingredients seal">
+                    <h3 style="color: var(--primary-color);">100% Natural</h3>
+                    <p style="color: #666;">Synaptigen uses only natural, non-GMO ingredients for safe and effective cognitive support without artificial fillers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+	
+	<section class="section" id="benefits-section" style="background-color: var(--light-bg);">
+    <div class="container" style="max-width: 900px;">
+        <h2 style="color: var(#262626);">Experience the Core Benefits of Synaptigen</h2>
+        
+        <div style="margin-top: 40px; background-color: var(--white); padding: 40px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+            
+            <p style="font-size: 1.15em; line-height: 1.8; color: var(--text-dark);">
+                Synaptigen offers a comprehensive cognitive and mood support system. The first core benefit you will experience is **Laser-Sharp Focus**. This powerful effect helps cut through frustrating mental fog and distractions, enabling deep, unwavering concentration necessary for tackling complex work or new learning. 
+            </p>
+            
+            <p style="font-size: 1.15em; line-height: 1.8; color: var(--text-dark);">
+                Secondly, Synaptigen supports **Crystal Clear Memory**. By strengthening the communication pathways in your brain, the formula promotes faster information recall and improves both short-term and long-term memory retention. You’ll find yourself remembering names, dates, and details with ease, boosting your confidence daily.
+            </p>
+            
+            <p style="font-size: 1.15em; line-height: 1.8; color: var(--text-dark);">
+                Furthermore, you will gain **Sustained Mental Energy**. The natural ingredients provide a steady boost of mental vitality that lasts throughout the entire day. Unlike coffee or heavy stimulants, this energy is clean and gentle, ensuring you maintain alertness without anxiety or the inevitable mid-afternoon energy crash.
+            </p>
+            
+            <p style="font-size: 1.15em; line-height: 1.8; color: var(--text-dark);">
+                Finally, Synaptigen provides **Advanced Gut-Brain Support**. The inclusion of a powerful probiotic and prebiotic blend optimizes the crucial communication pathway between your digestive system and your brain. This foundational support is key to regulating mood, enhancing nutrient absorption, and fostering overall mental resilience and well-being.
+            </p>
+            
+        </div>
+        
+    </div>
+</section>
+    
+    <!-- Customer Reviews Section -->
+    <section class="section" style="background-color: var(--white);">
+        <div class="container">
+            <h2>⭐ REAL PEOPLE. REAL RESULTS.</h2>
+            
+            <div class="feature-grid">
+                
+                <div class="review-flex">
+                    <img src="https://synaptigen.555supp.com/synaptigen/m2-730x383.png" alt="Happy Customer Michael D.">
+                    <div class="review-text-content">
+                        <div style="color: var(--star-color); font-size: 1.1em;">★★★★★</div>
+                        <p>“Synaptigen is a life-saver for my productivity. I can finally work through my whole coding block with **laser focus** and no afternoon crash.”</p>
+                        <span style="font-weight: bold;">- Michael D., Software Developer (Austin, TX)</span>
+                    </div>
+                </div>
+                
+                <div class="review-flex">
+                    <img src="https://synaptigen.555supp.com/synaptigen/m1-730x383.png" alt="Satisfied Customer Sarah L.">
+                    <div class="review-text-content">
+                        <div style="color: var(--star-color); font-size: 1.1em;">★★★★★</div>
+                        <p>“My memory felt foggy before, but after two weeks on Synaptigen, I feel a huge difference. **Mental clarity** is off the charts.”</p>
+                        <span style="font-weight: bold;">- Sarah L., Nurse Practitioner (New York, NY)</span>
+                    </div>
+                </div>
+                
+                <div class="review-flex">
+                    <img src="https://synaptigen.sacworks.com/synaptigen/synaptigen-review-2.webp" alt="Successful Customer David R.">
+                    <div class="review-text-content">
+                        <div style="color: var(--star-color); font-size: 1.1em;">★★★★☆</div>
+                        <p>“I was skeptical, but the sustained energy is real. It helps me manage my hectic schedule without stress. Worth every penny for the **mental edge**.”</p>
+                        <span style="font-weight: bold;">- David R., Business Owner (Los Angeles, CA)</span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+                  <!-- 🟢 NAYA SECTION: What is Synaptigen? (Product Explanation) -->
+<section class="section full-width-cta" id="global-cta-bar" style="
+    background-color: #1c4542; /* Requested Dark Teal Background */
+    padding: 0px 0; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    color: var(--white); /* Default text color for the section is White */
+">
+    <div class="container" style="max-width: 1100px;">
+        
+        <h2 style="
+            margin: 20 30px 0; 
+            font-size: 3em; 
+            font-weight: 800;
+            line-height: 1;
+            text-align: center;
+            color: var(--white); /* Ensure heading text is white */
+        ">		What is Synaptigen?</h2>
+        
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 40px; margin-top: 30px;">
+            
+            <!-- Explanation Text -->
+            <div style="flex: 1; min-width: 300px;">
+                <p style="font-size: 1.15em; line-height: 1.7;">
+                    Synaptigen is a revolutionary **all-natural cognitive support formula** designed to optimize brain function, especially as you age. It targets the core issues of mental fatigue and memory decline by providing essential nutrients that support strong synaptic connections—the pathways through which your brain cells communicate.
+                </p>
+                <p style="font-size: 1.15em; line-height: 1.7;">
+                    Unlike energy drinks or caffeine pills that cause jitters and a crash, Synaptigen works gently and sustainably. It helps you achieve **laser-sharp focus, crystal clear memory recall**, and **sustained mental energy** throughout the day. It’s the smart way to keep your mind young and sharp.
+                </p>
+				<p style="font-size: 1.15em; line-height: 1.7;">
+				Synaptigen takes a holistic approach to brain health. Step one: clear the sugar buildup that clogs neurons. Step two: feed the brain with probiotics, prebiotics, and plant nutrients that restore balance.
+				</p>
+				
+	
+                <a href="https://b07276p1ssoa86xd1jhe69kzo4.hop.clickbank.net" class="cta-button" ... >
+                    FEEL THE DIFFERENCE - ORDER NOW
+                </a>
+            </div>
+            
+            <!-- Supporting Image (Brain/Science) -->
+            <div style="flex: 1; min-width: 300px; text-align: center;">
+                <img src="https://getsynaptigen.com//statics/img/rounded-tsl.png?" 
+                     alt="synapitgen clinically researched ingredients bottels." 
+                     style="max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);">
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- END NAYA SECTION: What is Synaptigen? -->
+
+        <section class="section" id="ingredients-section">
+		
+    <div class="container">
+        <h2 style="color: var(--dark-green);">The Complete Formula: 8 Powerhouse Ingredients</h2>
+        
+        <div style="margin-top: 50px; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
+            
+            <div style="padding: 20px; background-color: var(--white); border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); text-align: center;">
+                <img src="https://getsynaptigen.com//statics/img/ing1.png?" alt="Lactobacillus Paracasei icon" style="width: 80px; height: 80px; border-radius: 50%; margin-bottom: 15px;">
+                <h3 style="color: var(--primary-color); margin-top: 0; margin-bottom: 5px;">Lactobacillus Paracasei</h3>
+                <p style="font-size: 0.95em;">Supports gut health and contributes to the gut-brain axis for improved mood and focus.</p>
+            </div>
+
+            <div style="padding: 20px; background-color: var(--white); border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); text-align: center;">
+                <img src="https://getsynaptigen.com//statics/img/ing2.png?" alt="Lactobacillus Reuteri icon" style="width: 80px; height: 80px; border-radius: 50%; margin-bottom: 15px;">
+                <h3 style="color: var(--primary-color); margin-top: 0; margin-bottom: 5px;">Lactobacillus Reuteri</h3>
+                <p style="font-size: 0.95em;">A well-researched strain known for supporting a balanced microbiome.</p>
+            </div>
+
+            <div style="padding: 20px; background-color: var(--white); border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); text-align: center;">
+                <img src="https://getsynaptigen.com//statics/img/ing3.png?" alt="Bifidobacterium icon" style="width: 80px; height: 80px; border-radius: 50%; margin-bottom: 15px;">
+                <h3 style="color: var(--primary-color); margin-top: 0; margin-bottom: 5px;">Bifidobacterium</h3>
+                <p style="font-size: 0.95em;">Essential for a healthy digestive tract, supporting nutrient absorption vital for brain fuel.</p>
+            </div>
+            
+            <div style="padding: 20px; background-color: var(--white); border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); text-align: center;">
+                <img src="https://getsynaptigen.com//statics/img/ing4.png?" alt="Lactis BL-04 icon" style="width: 80px; height: 80px; border-radius: 50%; margin-bottom: 15px;">
+                <h3 style="color: var(--primary-color); margin-top: 0; margin-bottom: 5px;">Lactis BL-04</h3>
+                <p style="font-size: 0.95em;">A patented strain that helps modulate the immune response and supports intestinal environment.</p>
+            </div>
+            
+
+            <div style="padding: 20px; background-color: var(--white); border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); text-align: center;">
+                <img src="https://getsynaptigen.com//statics/img/ing5.png?" alt="Inulin fiber icon" style="width: 80px; height: 80px; border-radius: 50%; margin-bottom: 15px;">
+                <h3 style="color: var(--primary-color); margin-top: 0; margin-bottom: 5px;">Inulin</h3>
+                <p style="font-size: 0.95em;">A prebiotic fiber that feeds the beneficial probiotics, maximizing their effectiveness.</p>
+            </div>
+
+            <div style="padding: 20px; background-color: var(--white); border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); text-align: center;">
+                <img src="https://getsynaptigen.com//statics/img/ing6.png?" alt="Tricalcium Phosphate icon" style="width: 80px; height: 80px; border-radius: 50%; margin-bottom: 15px;">
+                <h3 style="color: var(--primary-color); margin-top: 0; margin-bottom: 5px;">Tricalcium Phosphate</h3>
+                <p style="font-size: 0.95em;">A common source of calcium, important for bone health and formula stability.</p>
+            </div>
+            
+            <div style="padding: 20px; background-color: var(--white); border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); text-align: center;">
+                <img src="https://getsynaptigen.com//statics/img/ing7.png?" alt="Strawberry icon" style="width: 80px; height: 80px; border-radius: 50%; margin-bottom: 15px;">
+                <h3 style="color: var(--primary-color); margin-top: 0; margin-bottom: 5px;">Strawberry Extract</h3>
+                <p style="font-size: 0.95em;">Adds a natural, enjoyable flavor and provides antioxidants.</p>
+            </div>
+            
+            <div style="padding: 20px; background-color: var(--white); border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); text-align: center;">
+                <img src="https://getsynaptigen.com//statics/img/ing8.png?" alt="Peppermint leaf icon" style="width: 80px; height: 80px; border-radius: 50%; margin-bottom: 15px;">
+                <h3 style="color: var(--primary-color); margin-top: 0; margin-bottom: 5px;">Peppermint Extract</h3>
+                <p style="font-size: 0.95em;">Used for flavoring, and can aid in mild digestive comfort.</p>
+            </div>
+
+        </div>
+
+        
+</section>
+   
+
+ <section class="section full-width-cta" id="global-cta-bar-2" style="
+        background-color: #1c4542; 
+        padding: 20px 0; 
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+        text-align: center;
+        color: var(--white);
+    ">
+        <div class="container" style="max-width: 1100px;">
+            <h2 style="
+                margin: 0; 
+                font-size: 2.2em; 
+                font-weight: 800;
+                line-height: 1.2;
+                color: var(--white); 
+            ">		
+                ✅ Claim Your Discounted Synaptigen While Stocks Last!
+            </h2>
+        </div>
+    </section>
+
+    <section class="section" id="pricing-section" style="padding: 40px 0 60px 0; background-color: var(--light-bg);">
+        
+        <div style="
+            text-align: center; 
+            background-color: #FFEB3B; /* Bright Yellow/Amber background */
+            color: #CC0000; /* Red text for warning */
+            padding: 15px 10px;
+            font-size: 1.5em;
+            font-weight: 800;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            margin: 0 auto; 
+        ">
+            🚨 WARNING: LIMITED STOCK - This Special Discount Expires Today!
+        </div>
+        <div class="container" style="max-width: 900px;">
+            
+            <div style="text-align: center; margin-top: 30px; margin-bottom: 0;">
+                <a href="https://b07276p1ssoa86xd1jhe69kzo4.hop.clickbank.net" 
+                    target="_blank" 
+                    rel="noopener noreferrer nofollow" 
+                    title="Click to Order Synaptigen at the lowest price"
+                    style="border: none; text-decoration: none; display: inline-block;">
+                    
+                    <img 
+                        src="https://synaptigen.555supp.com/synaptigen/synaptigen-price.png" 
+                        alt="Synaptigen official website pricing chart showing 1, 3, and 6 bottle discounted packages." 
+                        style="max-width: 100%; 
+                               height: auto; 
+                               border-radius: 10px; 
+                               box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); 
+                               display: block; 
+                               margin: 0 auto;">
+                </a>
+            </div>
+            
+            <div style="
+                text-align: center; 
+                margin: 0 0 25px 0; 
+                padding-top: 5px; 
+                font-size: 1.2em; 
+                font-weight: 600; 
+                color: var(--text-dark); 
+            ">
+                Our customers say 
+                <span style="color: var(--star-color); font-size: 1.3em;">
+                    ⭐⭐⭐⭐⭐ 
+                </span>
+                <span style="font-weight: 700;"> 
+                    based on 12,643 reviews!
+                </span>
+            </div>
+            
+            <div style="text-align: center; margin-top: 20px; margin-bottom: 20px;">
+                <img 
+                    src="https://getsynaptigen.com//statics/img/certifications.png?" 
+                    alt="100% Secure Checkout, Money Back Guarantee, Made in USA Certifications" 
+                    style="max-width: 500px; 
+                           height: auto; 
+                           display: inline-block;">
+            </div>
+    </section>         
+	
+</section>
+<section class="section" id="bonuses-section" style="
+    background-color: #1c4542; /* Requested Dark Teal Background */
+    padding: 50px 0; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    color: var(--white); /* Default text color for the section is White */
+">
+    <div class="container" style="max-width: 1100px;">
+        
+        <h2 style="
+            margin: 0 0 30px 0; 
+            font-size: 3em; 
+            font-weight: 800;
+            line-height: 1.2;
+            text-align: center;
+            color: var(--white); /* Ensure heading text is white */
+        ">		
+            🎁 Order 6 Bottles and Get 3 FREE Bonuses!
+        </h2>
+        
+        <div class="feature-grid">
+            
+            <div class="feature-item" style="background-color: #1c4542; border: 1px solid var(--secondary-color);">
+                <img 
+                    src="https://getsynaptigen.com//statics/img/bonus1.png?" 
+                    alt="Bonus 1 - Deep Sleep Blueprint cover"
+                    style="max-width: 100%; height: auto; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);"
+                >
+                <h3 style="color: var(--white); font-size: 1.8em;">BONUS #1</h3>
+                <h4 style="color: #00BCD4; margin-top: 0;">Deep Sleep Blueprint: How To Get The Perfect Sleep In Just One Week</h4>
+                <p style="color: var(--light-bg); font-size: 1.05em;">
+                    Discover three doctor-approved sleep tricks to help you drift off in minutes, a simple bed adjustment for deeper rest, and five pressure points that even lifelong insomniacs swear by.
+                </p>
+                <div style="margin-top: 20px;">
+                    <span style="font-size: 1.1em; text-decoration: line-through; color: #999;">Retail Price – $79</span>
+                    <br>
+                    <span style="font-size: 1.5em; font-weight: 800; color: var(--secondary-color);">Today: FREE</span>
+                </div>
+            </div>
+            
+            <div class="feature-item" style="background-color: #1c4542; border: 1px solid var(--secondary-color);">
+                <img 
+                    src="https://getsynaptigen.com//statics/img/bonus2.png?" 
+                    alt="Bonus 2 - Sharp Mind In 7 Days Guide cover"
+                    style="max-width: 100%; height: auto; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);"
+                >
+                <h3 style="color: var(--white); font-size: 1.8em;">BONUS #2</h3>
+                <h4 style="color: #FF9800; margin-top: 0;">Sharp Mind In 7 Days: A Simple Guide To Becoming Super Smart</h4>
+                <p style="color: var(--light-bg); font-size: 1.05em;">
+                    Learn how to clear brain fog using your nose, adopt the MENSA-approved sleep position for better rest, and master a 3-minute word trick to think and respond faster in conversations.
+                </p>
+                <div style="margin-top: 20px;">
+                    <span style="font-size: 1.1em; text-decoration: line-through; color: #999;">Retail Price – $89</span>
+                    <br>
+                    <span style="font-size: 1.5em; font-weight: 800; color: var(--secondary-color);">Today: FREE</span>
+                </div>
+            </div>
+            
+            <div class="feature-item" style="background-color: #1c4542; border: 1px solid var(--secondary-color);">
+                <img 
+                    src="https://getsynaptigen.com//statics/img/bonus3.png?" 
+                    alt="Bonus 3 - Learn Faster and Boost Memory guide cover"
+                    style="max-width: 100%; height: auto; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);"
+                >
+                <h3 style="color: var(--white); font-size: 1.8em;">BONUS #3</h3>
+                <h4 style="color: #F44336; margin-top: 0;">10 Proven Ways to Learn Faster and Boost Memory</h4>
+                <p style="color: var(--light-bg); font-size: 1.05em;">
+                    Discover a catchy jingle, a powerful rhyme, and 3 special images that unlock faster recall and stronger memory connections. These science-backed tricks make learning feel effortless.
+                </p>
+                <div style="margin-top: 20px;">
+                    <span style="font-size: 1.1em; text-decoration: line-through; color: #999;">Retail Price – $79</span>
+                    <br>
+                    <span style="font-size: 1.5em; font-weight: 800; color: var(--secondary-color);">Today: FREE</span>
+                </div>
+            </div>
+        </div>
+        
+</section>
+<section class="section" style="padding: 40px 0; background-color: var(--white);">
+    <div class="container" style="max-width: 1000px;">
+        
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 30px; flex-wrap: wrap;">
+            
+            <div style="flex: 1; min-width: 250px; text-align: center;">
+                <img 
+                    src="https://getsynaptigen.com/statics/img/freeship.png?" 
+                    alt="Free Shipping Icon / Badge" 
+                    style="max-width: 70%; height: auto; display: block; margin: 0 auto;"
+                >
+            </div>
+            
+            <div style="flex: 1.5; min-width: 300px; text-align: left;">
+                
+                <h3 style="
+                    color: var(--text-dark); /* Black/Dark Grey Font */
+                    font-size: 2.5em; 
+                    margin-top: 0; 
+                    margin-bottom: 15px; 
+                    line-height: 1.2;
+                    font-weight: 800;
+                ">
+                    Every 6 Bottles Order Gets <span style="color: var(--dark-green); text-decoration: underline;">FREE Shipping Too!</span>
+                </h3>
+                
+                <p style="
+                    font-size: 1.4em; 
+                    color: var(--text-dark); /* Black/Dark Grey Font */
+                    font-weight: 600; 
+                   
+                    padding: 15px;
+                    display: inline-block;
+                    margin-top: 15px;
+                    border-radius: 8px;
+                ">
+                    *96% Of Customers Order 6 Bottles (Our Recommended Option)
+                </p>
+
+            </div>
+            
+        </div>
+
+    </div>
+</section>
+<section class="section" style="padding: 50px 0; background-color: var(--light-bg);">
+    <div class="container" style="max-width: 1100px;">
+        
+        <div style="
+            background-color: #1c4542; /* Dark Teal Background Color */
+            color: var(--white); /* White Text */
+            padding: 40px;
+            border-radius: 20px; /* Rounded Corners */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Strong Shadow for depth */
+        ">
+            
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 30px; flex-wrap: wrap;">
+                
+                <div style="flex: 1; min-width: 200px; text-align: center;">
+                    <img 
+                        src="https://getsynaptigen.com/statics/img/money-180.png?" 
+                        alt="180 Day Money Back Guarantee Seal" 
+                        style="max-width: 100%; height: auto; display: block; margin: 0 auto;"
+                    >
+                </div>
+                
+                <div style="flex: 3.5; min-width: 300px; text-align: left;">
+                    
+                    <h2 style="
+                        color: var(--white); 
+                        font-size: 2.5em; 
+                        margin-top: 0; 
+                        margin-bottom: 15px; 
+                        font-weight: 800;
+                        line-height: 1.2;
+                    ">
+                        100% Risk-Free: Our 180-Day Money Back Guarantee
+                    </h2>
+                    
+                    <p style="font-size: 1.1em; margin-bottom: 20px;">
+                        Your order today is covered by our iron-clad 180 - day 100% money-back guarantee. If you are not impressed with the results, then just write to us and we’ll refund every single cent.
+                    </p>                                            
+    </div>
+</section>
+
+ <section class="section full-width-cta" id="final-cta" style="
+        background-color: #1c4542; 
+        padding: 60px 0; 
+        box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        color: var(--white); 
+    ">
+        <div class="container" style="max-width: 900px;">
+            
+            <h2 style="
+                color: var(--white); 
+                font-size: 3.5em; 
+                margin-bottom: 30px; 
+                font-weight: 900;
+                line-height: 1.1;
+            ">
+                Don't Wait Any Longer! Order Your Discounted Bottles Now!
+            </h2>
+            
+            <div id="countdown-container" style="text-align: center; margin-bottom: 25px;">
+                <div id="timer" style="
+                    font-size: 2.5em; 
+                    font-weight: 900; 
+                    color: var(--secondary-color); 
+                    background-color: rgba(0,0,0,0.2); 
+                    padding: 10px 0; 
+                    border-radius: 8px;
+                    margin-bottom: 10px;
+                ">
+                    TIME LEFT FOR THIS OFFER: 00:00:00
+                </div>
+
+                <p style="
+                    font-size: 1.2em; 
+                    font-weight: 700; 
+                    color: var(--white);
+                    margin: 0;
+                ">
+                    ⚠️ LIMITED STOCK ALERT: Only 37 Bottles Left!
+                </p>
+            </div>
+            <div style="margin-bottom: 25px;">
+                <img 
+                    src="https://getsynaptigen.com//statics/img/6_bottles_fe_new.png?" 
+                    alt="Six bottle package of Synaptigen with huge discount" 
+                    style="max-width: 100%; 
+                           height: auto; 
+                           border-radius: 15px; 
+                           box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);"
+                >
+            </div>
+            
+            <p style="
+                font-size: 1.6em; 
+                color: var(--white); 
+                font-weight: 700; 
+                margin-bottom: 30px;
+            ">
+                <span style="font-size: 1.5em; color: #FFD700; text-decoration: line-through; font-weight: 500;">Regular Price: $179/bottle</span>
+                <br>
+                <span style="font-size: 2em; color: color: var(--white); font-weight: 800; display: block; margin-top: 10px;">Today Only for: $49/bottle</span>
+            </p>
+
+            <a href="https://b07276p1ssoa86xd1jhe69kzo4.hop.clickbank.net" class="cta-button" style="
+                font-size: 1em; 
+                padding: 15px 35px;
+                background-color: var(--secondary-color); 
+                color: var(--white); 
+                font-weight: 900;
+            ">
+                <span style="font-size: 1.2em; margin-right: 10px;">🚚</span> ORDER & SECURE FREE SHIPPING!
+            </a>
+            
+            <p style="font-size: 1.1em; color: var(--white); margin-top: 20px;">
+                *Protected by the 180-Day Money-Back Guarantee
+            </p>
+            
+        </div>
+    </section>
+
+<section class="section" id="faq-section" style="padding: 50px 0; background-color: var(--light-bg);">
+    <div class="container" style="max-width: 900px;">
+
+        <h2 style="
+            margin: 0 0 40px 0; 
+            font-size: 3.5em;
+            font-weight: 800;
+            line-height: 1.2;
+            text-align: center;
+            color: #262626; /* REQUESTED COLOR */
+        ">
+            ❓ Frequently Asked Questions
+        </h2>
+
+        <div id="accordion-faq">
+            
+            <details open style="margin-bottom: 20px;">
+                <summary style="
+                    padding: 10px 0; 
+                    font-weight: 700; 
+                    font-size: 1.15em; 
+                    cursor: pointer;
+                    color: #262626; /* REQUESTED COLOR */
+                    border-bottom: 1px solid #CCC;
+                ">
+                    1. What results can I expect from Synaptigen?
+                </summary>
+                <div style="padding: 15px 0 0 0; font-size: 1em; color: #262626;">
+                    <p style="margin: 0;">Users typically report three main benefits: **Laser-sharp focus** to eliminate mental fog, **crystal clear memory recall** for names and details, and **sustained mental energy** throughout the entire day without jitters or crashes.</p>
+                </div>
+            </details>
+
+            <details style="margin-bottom: 20px;">
+                <summary style="
+                    padding: 10px 0; 
+                    font-weight: 700; 
+                    font-size: 1.15em; 
+                    cursor: pointer;
+                    color: #262626; /* REQUESTED COLOR */
+                    border-bottom: 1px solid #CCC;
+                ">
+                    2. Is Synaptigen safe and are there any side effects?
+                </summary>
+                <div style="padding: 15px 0 0 0; font-size: 1em; color: #262626;">
+                    <p style="margin: 0;">Yes. Synaptigen uses 100% natural, non-GMO ingredients manufactured in an FDA-registered and GMP-certified facility. It is generally safe for all adults. If you have a medical condition, consult your doctor before use.</p>
+                </div>
+            </details>
+            
+            <details style="margin-bottom: 20px;">
+                <summary style="
+                    padding: 10px 0; 
+                    font-weight: 700; 
+                    font-size: 1.15em; 
+                    cursor: pointer;
+                    color: #262626; /* REQUESTED COLOR */
+                    border-bottom: 1px solid #CCC;
+                ">
+                    3. How do I take Synaptigen for the best effects?
+                </summary>
+                <div style="padding: 15px 0 0 0; font-size: 1em; color: #262626;">
+                    <p style="margin: 0;">We recommend taking one scoop mixed with water or your favorite beverage every morning. Consistency is key for optimal results in memory and focus.</p>
+                </div>
+            </details>
+            
+            <details style="margin-bottom: 20px;">
+                <summary style="
+                    padding: 10px 0; 
+                    font-weight: 700; 
+                    font-size: 1.15em; 
+                    cursor: pointer;
+                    color: #262626; /* REQUESTED COLOR */
+                    border-bottom: 1px solid #CCC;
+                ">
+                    4. How long does shipping take?
+                </summary>
+                <div style="padding: 15px 0 0 0; font-size: 1em; color: #262626;">
+                    <p style="margin: 0;">We process all orders within 24 hours. Domestic orders (US) usually arrive within 5–7 business days. You will receive a tracking link via email.</p>
+                </div>
+            </details>
+
+            <details style="margin-bottom: 20px;">
+                <summary style="
+                    padding: 10px 0; 
+                    font-weight: 700; 
+                    font-size: 1.15em; 
+                    cursor: pointer;
+                    color: #262626; /* REQUESTED COLOR */
+                    border-bottom: 1px solid #CCC;
+                ">
+                    5. Which package should I order?
+                </summary>
+                <div style="padding: 15px 0 0 0; font-size: 1em; color: #262626;">
+                    <p style="margin: 0;">For the best results and savings, we strongly recommend the 6-bottle package. This ensures you have enough supply for the optimal three to six-month period to lock in the long-term cognitive benefits, plus you receive all the exclusive FREE bonuses.</p>
+                </div>
+            </details>
+            
+            <details style="margin-bottom: 20px;">
+                <summary style="
+                    padding: 10px 0; 
+                    font-weight: 700; 
+                    font-size: 1.15em; 
+                    cursor: pointer;
+                    color: #262626; /* REQUESTED COLOR */
+                    border-bottom: 1px solid #CCC;
+                ">
+                    6. What is the refund policy?
+                </summary>
+                <div style="padding: 15px 0 0 0; font-size: 1em; color: #262626;">
+                    <p style="margin: 0;">Your purchase is protected by our full **180-day, 100% money-back guarantee**. If you are not satisfied for any reason, simply contact us within 6 months of purchase for a full refund.</p>
+                </div>
+            </details>
+            
+            <details style="margin-bottom: 20px;">
+                <summary style="
+                    padding: 10px 0; 
+                    font-weight: 700; 
+                    font-size: 1.15em; 
+                    cursor: pointer;
+                    color: #262626; /* REQUESTED COLOR */
+                    border-bottom: 1px solid #CCC;
+                ">
+                    7. Is this a subscription or a one-time charge?
+                </summary>
+                <div style="padding: 15px 0 0 0; font-size: 1em; color: #262626;">
+                    <p style="margin: 0;">This is a **one-time charge only**. We do not believe in recurring charges. There are no hidden fees or subscriptions—what you order today is exactly what you pay for.</p>
+                </div>
+            </details>
+            
+        </div>
+        
+    </div>
+</section>
+
+<section class="section full-width-cta" id="global-cta-bar" style="
+    background-color: #1c4542; /* Requested Dark Teal Background */
+    padding: 0px 0; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    color: var(--white); /* Default text color for the section is White */
+">
+    <div class="container" style="max-width: 1100px;">
+        
+        <h2 style="
+            margin: 20 30px 0; 
+            font-size: 2em; 
+            font-weight: 800;
+            line-height: 1;
+            text-align: center;
+            color: var(--white); /* Ensure heading text is white */
+        ">		
+            ✅ Claim Your Discounted Synaptigen While Stocks Last!
+        </h2>
+    </div>
+</section>
+
+<section class="section" id="pricing-section" style="padding: 40px 0 60px 0; background-color: var(--light-bg);">
+    <div class="container" style="max-width: 900px;">
+        
+        
+        <div style="text-align: center; margin-top: 30px;">
+    <a href="https://b07276p1ssoa86xd1jhe69kzo4.hop.clickbank.net" 
+        target="_blank" 
+        rel="noopener noreferrer nofollow" 
+        title="Click to Order Synaptigen at the lowest price"
+        style="border: none; text-decoration: none; display: inline-block;"
+    > 
+        <img 
+            src="https://synaptigen.555supp.com/synaptigen/synaptigen-price.png" 
+            alt="Synaptigen official website pricing chart showing 1, 3, and 6 bottle discounted packages." 
+            style="max-width: 100%; 
+                   height: auto; 
+                   border-radius: 10px; 
+                   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); 
+                   display: block; 
+                   margin: 0 auto;"
+        >
+    </a>
+</div>
+</section>
+            
+            <div style="
+    text-align: center; 
+    margin-top: 0px; /* TOP MARGIN REMOVED */
+    margin-bottom: 25px; 
+    font-size: 1.2em; 
+    font-weight: 600; 
+    color: var(--text-dark); 
+">
+    Our customers say 
+    <span style="color: var(--star-color); font-size: 1.3em;">
+        ⭐⭐⭐⭐⭐ 
+    </span>
+    <span style="font-weight: 700;"> 
+        based on 12,643 reviews!
+    </span>
+</div>
+</section>
+
+<section class="section" style="padding: 40px 0; background-color: var(--light-bg); text-align: center;">
+    <div class="container" style="max-width: 2200px;">   </h3>        
+        <img 
+            src="https://getsynaptigen.com//statics/img/science-ref.png?" 
+            alt="Scientific backing and clinical research references" 
+            style="max-width: 100%; 
+                   height: auto; 
+                   border-radius: 12px;
+                   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);"
+        >
+        
+    </div>
+</section>
+
+<section class="section" id="references-section" style="padding: 50px 0; background-color: var(--white);">
+    <div class="container" style="max-width: 1000px;">
+
+        <h2 style="
+            margin: 0 0 40px 0; 
+            font-size: 2.5em;
+            font-weight: 800;
+            line-height: 1.2;
+            text-align: center;
+            color: #262626; /* Dark Grey Text */
+        ">
+            Scientific References
+        </h2>
+        
+        
+        <div style="display: flex; gap: 40px; flex-wrap: wrap;">
+            
+            <ol style="padding-left: 20px; flex: 1; min-width: 350px; margin: 0;">
+                <li style="margin-bottom: 20px; font-size: 0.95em; line-height: 1.5; color: var(--text-dark);">
+                    Abdelhalim, A. (2021). The effect of Mentha Piperita L. on the mental health issues of university students: A pilot study. Journal of Pharmacy & Pharmacognosy Research, 9(1), 49–57. <a href="https://doi.org/10.56499/jppres20.932_9.1.49" style="color: var(--dark-green); text-decoration: none;">Link</a>
+                </li>
+                <li style="margin-bottom: 20px; font-size: 0.95em; line-height: 1.5; color: var(--text-dark);">
+                    Dang, F., et al. (2018). Administration of Lactobacillus paracasei ameliorates type 2 diabetes in mice. Food & Function, 9(7), 3630–3639.
+                </li>
+                <li style="margin-bottom: 20px; font-size: 0.95em; line-height: 1.5; color: var(--text-dark);">
+                    Dehghan, P., et al. (2013). Effects of high performance inulin supplementation on glycemic status and lipid profile in women with type 2 diabetes. Health Promotion Perspectives, 3(1), 55–63.
+                </li>
+                <li style="margin-bottom: 20px; font-size: 0.95em; line-height: 1.5; color: var(--text-dark);">
+                    Douda, D. (2017). Mayo clinic minute: Is Alzheimer’s type 3 diabetes? Mayo Clinic.
+                </li>
+                <li style="margin-bottom: 20px; font-size: 0.95em; line-height: 1.5; color: var(--text-dark);">
+                    Fedrigo, O., et al. (2011). A potential role for glucose transporters in the evolution of human brain size. Brain, Behavior and Evolution, 78(4), 315–326.
+                </li>
+                <li style="margin-bottom: 20px; font-size: 0.95em; line-height: 1.5; color: var(--text-dark);">
+                    Fonteles, A. A., et al. (2016). Rosmarinic acid prevents against memory deficits in ischemic mice. Behavioural Brain Research, 297, 91–103.
+                </li>
+                <li style="margin-bottom: 20px; font-size: 0.95em; line-height: 1.5; color: var(--text-dark);">
+                    Fruit Growers News. (2020, September 17). Study: Eating strawberries often may reduce Alzheimer’s dementia risk.
+                </li>
+                <li style="margin-bottom: 20px; font-size: 0.95em; line-height: 1.5; color: var(--text-dark);">
+                    Guo, L., et al. (2021). Inulin ameliorates schizophrenia via modulation of the gut microbiota and anti-inflammation in mice. Food & Function, 12(3), 1156–1175.
+                </li>
+                <li style="margin-bottom: 20px; font-size: 0.95em; line-height: 1.5; color: var(--text-dark);">
+                    Hanafy, D. M., et al. (2020). Potential role of phenolic extracts of mentha in managing oxidative stress and alzheimer’s disease. Antioxidants, 9(7), 631.
+                </li>
+                <li style="margin-bottom: 20px; font-size: 0.95em; line-height: 1.5; color: var(--text-dark);">
+                    Harvard Health Publishing. (2019, November 9). Added sugar: Where is it hiding?
+                </li>
+                <li style="margin-bottom: 20px; font-size: 0.95em; line-height: 1.5; color: var(--text-dark);">
+                    Harvard Health Publishing. (2023, March 22). Probiotics may help boost mood and cognitive function.
+                </li>
+                <li style="margin-bottom: 20px; font-size: 0.95em; line-height: 1.5; color: var(--text-dark);">
+                    Herrlinger, K. A., et al. (2018). Spearmint extract improves working memory in men and women with age-associated memory impairment. The Journal of Alternative and Complementary Medicine, 24(1), 37–47.
+                </li>
+                <li style="margin-bottom: 20px; font-size: 0.95em; line-height: 1.5; color: var(--text-dark);">
+                    Mao, J.-H., et al. (2020). Genetic and metabolic links between the murine microbiome and memory. Microbiome, 8(1), 53.
+                </li>
+            </ol>
+
+            <ol start="14" style="padding-left: 20px; flex: 1; min-width: 350px; margin: 0;">
+                <li style="margin-bottom: 20px; font-size: 0.95em; line-height: 1.5; color: var(--text-dark);">
+                    John, S. K., et al. (2021). Impact of gut microbiome Lactobacillus spp. in brain function and its medicament towards Alzheimer’s disease pathogenesis. Journal of Pure and Applied Microbiology, 15(3), 1029–1041.
+                </li>
+                <li style="margin-bottom: 20px; font-size: 0.95em; line-height: 1.5; color: var(--text-dark);">
+                    Kocsis, T., et al. (2020). Probiotics have beneficial metabolic effects in patients with type 2 diabetes mellitus: A meta-analysis of randomized clinical trials. Scientific Reports, 10(1), 11787.
+                </li>
+                <li style="margin-bottom: 20px; font-size: 0.95em; line-height: 1.5; color: var(--text-dark);">
+                    Kumari, S. (2020). Effects of sugar crystals on cerebrum. Acta Scientific Dental Scienecs, 4(8), 68–69.
+                </li>
+                <li style="margin-bottom: 20px; font-size: 0.95em; line-height: 1.5; color: var(--text-dark);">
+                    Laws, G. L., et al. (2021). Human systemic immune response to ingestion of the oral probiotic streptococcus salivarius BLIS K12. Probiotics and Antimicrobial Proteins, 13(6), 1521–1529.
+                </li>
+                <li style="margin-bottom: 20px; font-size: 0.95em; line-height: 1.5; color: var(--text-dark);">
+                    Lee, H. L., et al. (2022). Anti-Amnesic effect of synbiotic supplementation containing Corni fructus and Limosilactobacillus Reuteri in DSS-Induced Colitis Mice. International Journal of Molecular Sciences, 24(1), 90–90.
+                </li>
+                <li style="margin-bottom: 20px; font-size: 0.95em; line-height: 1.5; color: var(--text-dark);">
+                    Huang, S.-Y., et al. (2018). Lactobacillus paracasei PS23 delays progression of age-related cognitive decline in senescence accelerated mouse prone 8 (SAMP8) mice. Nutrients, 10(7), 894.
+                </li>
+                <li style="margin-bottom: 20px; font-size: 0.95em; line-height: 1.5; color: var(--text-dark);">
+                    Ni Lochlainn, M., et al. (2024). Effect of gut microbiome modulation on muscle function and cognition: The PROMOTe randomised controlled trial. Nature Communications, 15(1), 1859.
+                </li>
+                <li style="margin-bottom: 20px; font-size: 0.95em; line-height: 1.5; color: var(--text-dark);">
+                    Optibacprobiotics. (2025). Bifidobacterium lactis Bl-04® | Database.
+                </li>
+                <li style="margin-bottom: 20px; font-size: 0.95em; line-height: 1.5; color: var(--text-dark);">
+                    Propper, R. E., et al. (2013). Getting a grip on memory: Unilateral hand clenching alters episodic recall. PLoS ONE, 8(4), e62474.
+                </li>
+                <li style="margin-bottom: 20px; font-size: 0.95em; line-height: 1.5; color: var(--text-dark);">
+                    Sagbasan, B. H., et al. (2024). Inulin and freeze-dried blueberry intervention lead to changes in the microbiota and metabolites within in vitro studies and in cognitive function within a small pilot trial on healthy children. Microorganisms, 12(7), 1501–1501.
+                </li>
+                <li style="margin-bottom: 20px; font-size: 0.95em; line-height: 1.5; color: var(--text-dark);">
+                    Sanger-Katz, M. (2016, May 21). You’d be surprised at how many foods contain added sugar. The New York Times.
+                </li>
+                <li style="margin-bottom: 20px; font-size: 0.95em; line-height: 1.5; color: var(--text-dark);">
+                    Wang, H., et al. (2016). Ameliorating effect of luteolin on memory impairment in an Alzheimer’s disease model. Molecular Medicine Reports, 13(5), 4215–4220.
+                </li>
+            </ol>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        
+        <h3 style="
+            color: var(--white); 
+            font-size: 1.2em; 
+            margin-bottom: 10px; 
+            font-weight: 700;
+        ">
+            FDA Compliance & Medical Disclaimer
+        </h3>
+        
+        <p style="
+            font-size: 0.85em; 
+            line-height: 1.5; 
+            max-width: 800px; 
+            margin: 0 auto 15px auto; 
+            color: #B0BEC5; 
+        ">
+            All content and information found on this page are for informational purposes only and are not intended to diagnose, treat, cure or prevent any disease. The FDA hasn't evaluated the statements provided on this page. Make sure you consult with a licensed doctor before taking any supplement or making any changes to your diet or exercise plan. Individual results may vary.
+        </p>
+
+        <p style="
+            font-size: 0.85em; 
+            line-height: 1.5; 
+            max-width: 800px; 
+            margin: 0 auto 15px auto;
+            color: #B0BEC5; 
+        ">
+            The display of third-party trademarks and trade names on this site does not necessarily indicate any affiliation or endorsements of our website. If you click a merchant link and buy a product or service on their website, we may be paid a fee by the merchant.
+        </p>
+
+        <p style="margin-top: 20px; font-weight: 600; font-size: 1em;">
+            Copyright © 2025 - Synaptigen
+        </p>
+    </div>
+</footer>
+<footer class="footer">
+        </footer>
+
+    <script>
+        // Timer functionality to run every time the page is loaded
+        function startCountdown() {
+            const timerElement = document.getElementById('timer');
+            if (!timerElement) return;
+
+            // Set the duration (e.g., 10 minutes or 600 seconds)
+            let duration = 600; // 10 minutes
+            
+            // This ensures the timer restarts after a full 10 minutes, but remains constant for the same user session.
+            let expiry = sessionStorage.getItem('timerExpiry');
+            
+            // Check if the timer is already saved and running
+            if (!expiry || expiry < Date.now()) {
+                // If not running or expired, set a new expiry time
+                expiry = Date.now() + (duration * 1000);
+                sessionStorage.setItem('timerExpiry', expiry);
+            }
+
+            const interval = setInterval(() => {
+                const timeRemaining = expiry - Date.now();
+
+                if (timeRemaining <= 0) {
+                    clearInterval(interval);
+                    timerElement.innerHTML = "OFFER EXPIRED! (Please Refresh Page)";
+                    return;
+                }
+
+                // Calculate total seconds, minutes, and seconds
+                const totalSeconds = Math.floor(timeRemaining / 1000);
+                const minutes = String(Math.floor(totalSeconds / 60)).padStart(2, '0');
+                const seconds = String(totalSeconds % 60).padStart(2, '0');
+
+                timerElement.innerHTML = `TIME LEFT FOR THIS OFFER: ${minutes}:${seconds}`;
+
+            }, 1000);
+        }
+
+        // Run the countdown when the page loads
+        startCountdown();
+    </script>
+</body>
+</html>
